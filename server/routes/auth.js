@@ -1,0 +1,10 @@
+const router = require('express').Router() 
+const User = require('../models/User')
+const userValidation = require('../controllers/authController')
+const verify = require('../middlewares/verifyToken')
+router.post('/register',userValidation.registerUser)
+router.post('/login',userValidation.loginUser)
+router.post('/logout',userValidation.logoutUser)
+router.post('/apods',verify,userValidation.getAPOD)
+router.post('/rovers',verify,userValidation.getRover)
+module.exports = router

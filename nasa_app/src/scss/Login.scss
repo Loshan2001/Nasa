@@ -1,0 +1,24 @@
+.login{
+     margin-top: 12%;
+}
+.form_container{
+    background-color: aliceblue;
+    padding: 30px;
+    width : 40%;
+    box-shadow: 0 0 10px rgba(14, 1, 65, 0.2);
+    transition: box-shadow 0.3s ease;
+ 
+}
+
+@media  screen and (max-width: 1000px) {
+    .form_container{
+        width : 80%
+    }
+    
+}
+@media  screen and (max-width: 700px) {
+    .form_container{
+        width : 65%
+    }
+    
+}

@@ -1,0 +1,65 @@
+.row_container{
+    padding: 20px;
+    margin: 30px;
+   // background-color: black;
+    
+}
+
+.row_container .card .card-body{
+    box-shadow: 0 0 10px rgba(14, 1, 65, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.row_container .card .card-body:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Adjusted 3D effect on hover */
+}
+
+
+.container .topic {
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.container .topic h3 {
+    color: rgb(244, 244, 250);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000
+}
+.centeredTitle {
+    text-align: center;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+  }
+ 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .row_container {
+        margin: 15px;
+    }
+
+    .container .topic {
+        margin-top: 5%;
+        margin-bottom: 30px;
+    }
+
+    .container .topic h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .row_container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .container .topic {
+        margin-top: 3%;
+        margin-bottom: 20px;
+    }
+
+    .container .topic h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,145 @@
+.cardAPOD{
+    background-color: #f6f7f8d4;
+}
+.imagecards{
+    background-color: #f6f7f8c5;
+}
+
+
+
+
+
+.card-header h5 {
+    color: rgb(3, 3, 40);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500
+}
+
+.cards{
+    padding: 10px;
+}
+
+.topic {
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.topic h3 {
+    color: rgb(239, 239, 247);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000
+}
+
+.custom-hr {
+    border-top: 2px solid #007bff;
+    /* Change color as needed */
+    margin-top: 80px;
+    /* Adjust margin top as needed */
+    margin-bottom: 30px;
+    /* Adjust margin bottom as needed */
+}
+
+.justify-text {
+
+    text-align: justify;
+    // background-color: #2685b0;
+    margin: 10px;
+    color: #172519;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+// .card-body {
+
+//     margin-top: -50px;
+// }
+
+.date-input {
+    width: 130px;
+     
+}
+
+
+.custom-card {
+    width: 70%;
+    height: 60%;
+    box-shadow: 0 6px 8px rgba(211, 9, 9, 0.1); /* Adjust the values for the shadow effect */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+    margin-bottom: 50px;
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 16px rgba(2, 31, 102, 0.2); /* Adjust the values for the shadow effect on hover */
+}
+.centered-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //height: 100vh;
+    //background-color: #007bff;
+    
+}
+
+.card-bodies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
+    text-align: justify;
+  }
+  
+  .card-text-container {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .card-text-container .card-text {
+    margin-bottom: 0px; /* Remove margin to prevent extra spacing */
+    padding: 20px;
+    background-color: #eef1f5;
+  }
+  .card-text small{
+    padding:10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(123, 14, 14);
+  }
+  
+  .cardTitle{
+    color: aliceblue; 
+    text-align: center;
+    width: 100%;
+    background-color: #007bff;
+    padding: 10px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .justify-text {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+    .custom-card {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .justify-text {
+        font-size: 14px;
+        /* Further adjust font size for even smaller screens */
+    }
+    .custom-card {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+
+
+
+
+ 

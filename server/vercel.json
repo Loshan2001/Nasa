@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/api/user/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      }
+    ],
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@now/node-server"
+      }
+    ]
+  }
