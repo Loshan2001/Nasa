@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser'); // Import cookie-parser
 const app = express()
 const cors = require('cors')
 const auth = require('./routes/auth')
-import path from 'path'
+const path = require('path');
 dotenv.config()
 mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser : true})
 const con = mongoose.connection 
