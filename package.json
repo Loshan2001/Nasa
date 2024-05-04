@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "build": "npm install && npm install --prefix nasa_app && npm run build --prefix nasa_app"
   },
   "author": "",
