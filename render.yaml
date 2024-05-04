@@ -1,0 +1,8 @@
+services:
+  - name: backend
+    buildCommand: cd server && npm install && npm run build
+     
+
+  - name: frontend
+    buildCommand: cd nasa_app && npm install && vite build
+   
