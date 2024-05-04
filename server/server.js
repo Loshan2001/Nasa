@@ -25,9 +25,14 @@ app.use(cors(
 app.use(cookieParser());
 //user route middleware 
 app.use('/api/user',auth)
-app.use(express.static(path.join(_dirname,'/nasa_app/dist')))
-app.get('*',(req,res)=>{
-    res.sendFile(path.join(_dirname,'nasa_app','dist','index.html'))
+// app.use(express.static(path.join(_dirname,'/nasa_app/dist')))
+// app.get('*',(req,res)=>{
+//     res.sendFile(path.join(_dirname,'nasa_app','dist','index.html'))
+// })
+app.use(express.static(path.join(_dirname, '/nasa_app')))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(_dirname, 'nasa_app', 'index.html'))
 })
 app.listen(8080,()=>{
     console.log("server running on port 8080.....")
