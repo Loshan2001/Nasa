@@ -13,7 +13,7 @@ const con = mongoose.connection
 con.on('open',()=>{
     console.log('mongoDB connected.....')
 })
-const __dirname = path.resolve()
+const _dirname = path.resolve()
 //middleware
 app.use(express.json())
 app.use(cors(
@@ -39,11 +39,11 @@ app.use(cookieParser());
 // })
 
 // Serve static files from the frontend build directory
-app.use(express.static(path.join(__dirname, '../nasa_app/dist')));
+app.use(express.static(path.join(_dirname, '../nasa_app/dist')));
 
 // Serve the index.html file for all other routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../nasa_app/dist/index.html'));
+    res.sendFile(path.join(_dirname, '../nasa_app/dist/index.html'));
 });
 
 app.listen(8080,()=>{
