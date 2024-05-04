@@ -16,13 +16,10 @@ con.on('open',()=>{
 const _dirname = path.resolve()
 //middleware
 app.use(express.json())
-app.use(cors(
-    // {
-    //     origin: 'http://example.com', // Specify the allowed origin(s) here
-    //      methods: 'GET,PUT,POST,DELETE', // Specify the allowed HTTP methods
-    //      credentials: true
-    // }
-))
+app.use(cors({
+    origin: 'https://nasa-api-w7ng.onrender.com', // Replace with your frontend URL
+    credentials: true // Enable cookies and other credentials
+}));
 app.use(cookieParser());
 //user route middleware 
  app.use('/api/user',auth)
