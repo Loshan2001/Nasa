@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server/server.js",
     "build": "npm install && npm install --prefix nasa_app && npm run build --prefix nasa_app"
   },
   "author": "",
