@@ -18,9 +18,7 @@ const _dirname = path.resolve();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-    origin: 'https://nasa-api-w7ng.onrender.com' // Update with your frontend domain over HTTPS
-}));
+app.use(cors());
 app.use(cookieParser());
 
 // User route middleware 
