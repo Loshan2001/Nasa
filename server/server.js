@@ -18,7 +18,13 @@ const _dirname = path.resolve();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+const corsOptions = {
+    origin: 'https://nasa-api-w7ng.onrender.com', // Replace with the appropriate origin(s)
+    credentials: true, // Include this line to allow sending cookies with cross-origin requests
+  };
+  
+  app.use(cors(corsOptions));
 app.use(cookieParser());
 
 // User route middleware 
