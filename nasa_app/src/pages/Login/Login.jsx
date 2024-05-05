@@ -17,7 +17,7 @@ function Login() {
             password : data.password
         }
         const name = loginData.email.split("@")[0];
-        axios.post('https://nasa-api-w7ng.onrender.com/api/user/login',loginData).then((res)=>{
+        axios.post('http://localhost:8080/api/user/login',loginData).then((res)=>{
             if(res.data.error) {
                 // alert(res.data.error)
                 Swal.fire({

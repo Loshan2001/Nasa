@@ -20,7 +20,7 @@ const _dirname = path.resolve();
 app.use(express.json());
 // app.use(cors());
 const corsOptions = {
-    origin: 'https://nasa-api-w7ng.onrender.com', // Replace with the appropriate origin(s)
+    origin: 'http://localhost:8080', // Replace with the appropriate origin(s)
     credentials: true, // Include this line to allow sending cookies with cross-origin requests
   };
   
