@@ -8,5 +8,8 @@
     "build": "npm install && npm install --prefix nasa_app && npm run build --prefix nasa_app"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
