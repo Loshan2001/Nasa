@@ -12,7 +12,7 @@ function Signup() {
             email : data.email,
             password : data.password
         }
-       axios.post('http://localhost:8080/api/user/register',backend_data).then((res)=>{
+       axios.post('https://nasa-api-w7ng.onrender.com/api/user/register',backend_data).then((res)=>{
         if(res.data.error) {
             alert(res.data.error)
 

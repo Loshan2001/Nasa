@@ -40,7 +40,7 @@ function Apod() {
 
     // Verify token on the server
     Axios.post(
-      'http://localhost:8080/api/user/apods',
+      'https://nasa-api-w7ng.onrender.com/api/user/apods',
       { date : date },
       {
         headers: {

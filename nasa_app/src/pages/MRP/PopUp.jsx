@@ -83,7 +83,7 @@ function PopUp(props) {
     
         // Verify token on the server
         Axios.post(
-          'http://localhost:8080/api/user/rovers',
+          'https://nasa-api-w7ng.onrender.com/api/user/rovers',
           { date : selectedDate },
           {
             headers: {
